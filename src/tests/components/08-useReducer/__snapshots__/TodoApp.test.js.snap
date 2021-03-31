@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el compoente <TodoApp /> debe mostrarse correctamente 1`] = `
+<div
+  className="container mt-5"
+>
+  <h1>
+    TodoApp (
+    0
+    )
+  </h1>
+  <p>
+    Pequeña app, muestra claramente que son y como funcionan las funciones 'reducers' (estados y acciones para manipularlos) y el uso del hook 'useReducer' que constituyen las bases para entender Redux). Básicamente el useReducer se asemeja al useState, pero es más robusto, ya que permite modificar el estado de muchas formas, más fácil de lo se lograría utilizando netamente useState. Recomendación: utilizar useState para cosas más simples, y useReducer para cosas más complejas
+    <br />
+    <br />
+    También se muestra como utilizar el local storage del navegador en conjunto con el useEffect
+  </p>
+  <div
+    className="row"
+  >
+    <div
+      className="col-7"
+    >
+      <TodoList
+        handleDelete={[Function]}
+        handleDone={[Function]}
+        todos={Array []}
+      />
+    </div>
+    <div
+      className="col mt-2"
+    >
+      <AddTodo
+        handleAdd={[Function]}
+      />
+    </div>
+  </div>
+  <hr />
+</div>
+`;

@@ -3,3 +3,13 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+
+
+// Para probar componentes React con Jest y enzyme
+// npm i --save-dev enzyme enzyme-adapter-react-16
+// npm install --save-dev enzyme-to-json
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import {createSerializer} from 'enzyme-to-json';
+configure({ adapter: new Adapter() });
+expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
